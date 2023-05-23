@@ -1,113 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile">
-    <meta name="keywords" content="HTML, CSS">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Sviluppo di una pagina web - Blog Epicode</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile"
+    />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
 
-     <style>
-        header img{
-            width: 200px;
-        }
-
-        header {
-            display: flex;
-            flex-direction: row;
-            justify-content:space-around;            
-        }
-
-        header h1{
-           text-align: center;
-           margin-left: 50px;           
-        }
-
-        nav ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        nav li {
-            padding: 20px;
-        }
-
-        main{
-            display: flex;
-            flex-direction: row;
-            width: 70%;
-            justify-content:space-around;
-        }
-
-        .title h2{
-            margin-bottom: 0;
-
-        }
-
-        .content pre {
-            background-color: rgb(205, 205, 205);
-        }
-
-        td, th {
-      border:1px solid #ddd;
-      padding:8px;
-      text-align: center;
+    <style>
+      header img {
+        width: 200px;
       }
 
-      form{
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      header h1 {
+        text-align: center;
+        margin-left: 50px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style-type: none;
+      }
+
+      nav li {
+        padding: 20px;
+      }
+
+      main {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-around;
+      }
+
+      .title h2 {
+        margin-bottom: 0;
+      }
+
+      .content pre {
+        background-color: rgb(205, 205, 205);
+      }
+
+      td,
+      th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+
+      form {
         display: block;
       }
 
-      aside{
+      aside {
         width: 30%;
         padding-left: 150px;
       }
-
-
-     </style>
-
-
-</head>
-<body>
+    </style>
+  </head>
+  <body>
     <header>
-        <img src="assets/img/logo.svg" alt="Epicode logo">
-        <h1>
-            Epicode - Il blog dei developers
-        </h1>
+      <img src="assets/img/logo.svg" alt="Epicode logo" />
+      <h1>Epicode - Il blog dei developers</h1>
 
-        <nav>
-            <ul>
-                <li><a href="#"> Home</a></li>
-                <li><a href="#"> Articoli</a></li>
-                <li><a href="#"> Lavora con noi</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#"> Articoli</a></li>
+          <li><a href="#"> Lavora con noi</a></li>
+        </ul>
+      </nav>
     </header>
 
-<main>
-    <section>
+    <main>
+      <section>
         <div class="title">
-            <h2>Come creare un template per i post</h2>
-            <p><em>di <a href="#">Mario Rossi</a> pubblicato il 25-12-2020</em></p>
+          <h2>Come creare un template per i post</h2>
+          <p>
+            <em>di <a href="#">Mario Rossi</a> pubblicato il 25-12-2020</em>
+          </p>
         </div>
 
         <div class="content">
-            <p>
-                La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine
-            </p>
-            <p>
-                Le varie aree saranno quindi suddivise in:
-                <ul>
-                    <li>Contenuti di intestazione del tag &lt;header&gt;</li>
-                    <li>Contenuti centrali variabili del tag &lt;main&gt; &#40;corpo principale&#41;</li>
-                    <li>Contenuti di fine pagina, da inserire nel tag &lt;footer&gt;</li>
-                </ul>
-            </p>
-            <p>
-                Formattazione del codice
-            </p>
-            <pre>
+          <p>
+            La prima cosa da fare è suddividere in blocchi logici la pagina,
+            identificando le parti comuni da applicare a tutte le pagine
+          </p>
+          <p>Le varie aree saranno quindi suddivise in:</p>
+
+          <ul>
+            <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+            <li>
+              Contenuti centrali variabili del tag &lt;main&gt; &#40;corpo
+              principale&#41;
+            </li>
+            <li>
+              Contenuti di fine pagina, da inserire nel tag &lt;footer&gt;
+            </li>
+          </ul>
+          <p>Formattazione del codice</p>
+          <pre>
                 <code>
             &lt;header&gt;
             Contenuto
@@ -123,78 +125,130 @@
                 </code>
             </pre>
 
-            <p>Il testo dell'articolo dovra essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</p>
-            <ol>
-                <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
-                <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
-                <li>Applicare gli stili CSS</li>
-            </ol>
+          <p>
+            Il testo dell'articolo dovra essere formattato per identificare
+            tutte le parti da selezionare con i CSS. Perciò i passi saranno:
+          </p>
+          <ol>
+            <li>
+              Progettare il markup assegnando ad ogni specifico testo il tag
+              appropriato
+            </li>
+            <li>
+              Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso
+              il basso
+            </li>
+            <li>Applicare gli stili CSS</li>
+          </ol>
 
-            <p>L'applicazione degli stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
-            <table>
-                <caption>Diffusione dei CSS</caption>
-             <thead>
-                <tr><th> Anno</th><th> &#37; di utilizzo</th><th> Supporto browsers</th></tr>
-             </thead>
-             <tbody>
-                <tr><td>2000</td><td>20&#37;</td><td>17&#37;</td></tr>
-                <tr><td>2002</td><td>35&#37;</td><td>22&#37;</td></tr>
-                <tr><td>2004</td><td>45&#37;</td><td>42&#37;</td></tr>
-                <tr><td>2008</td><td>80&#37;</td><td>51&#37;</td></tr>
-                <tr><td>2012</td><td>100&#37;</td><td>76&#37;</td></tr>
-             </tbody>
-            </table>
+          <p>
+            L'applicazione degli stili CSS è cresciuta negli anni fino a
+            raggiungere la diffusione pressoché totale.
+          </p>
+          <table>
+            <caption>
+              Diffusione dei CSS
+            </caption>
+            <thead>
+              <tr>
+                <th>Anno</th>
+                <th>&#37; di utilizzo</th>
+                <th>Supporto browsers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2000</td>
+                <td>20&#37;</td>
+                <td>17&#37;</td>
+              </tr>
+              <tr>
+                <td>2002</td>
+                <td>35&#37;</td>
+                <td>22&#37;</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>45&#37;</td>
+                <td>42&#37;</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td>80&#37;</td>
+                <td>51&#37;</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>100&#37;</td>
+                <td>76&#37;</td>
+              </tr>
+            </tbody>
+          </table>
 
-            <p>Un test di validazione potrà essere fatto tramite il tool online di <a href="https://jigsaw.w3.org/css-validator/"> W3C</a> dedicato allo scopo. Una volta ottimizzato il tutto, 
-                avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
+          <p>
+            Un test di validazione potrà essere fatto tramite il tool online di
+            <a href="https://jigsaw.w3.org/css-validator/"> W3C</a> dedicato
+            allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il
+            nostro obiettivo ed essere stati dei veri developers come loro:
+          </p>
 
-                <iframe width="700" height="400" src="https://www.youtube.com/watch?v=IjzdMvuzxDY&ab_channel=EPICODE" frameborder="0"></iframe>
-            
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/IjzdMvuzxDY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
 
         <div class="subscription">
-            <h3>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</h3>
-            <form onsubmit="alert('Registrazione inviata!')">
-                <div>
-                <input type="email" placeholder="Inserisci il tuo indirizzo email">
-                </div>
-                <div>
-                    <button type="submit">Iscriviti!</button>
-                </div>
-            
-            </form>
+          <h3>
+            Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+            nostra newsletter:
+          </h3>
+          <form onsubmit="alert('Registrazione inviata!')">
+            <div>
+              <input
+                type="email"
+                placeholder="Inserisci il tuo indirizzo email"
+              />
+            </div>
+            <div>
+              <button type="submit">Iscriviti!</button>
+            </div>
+          </form>
         </div>
+      </section>
 
-    </section>
-
-    <aside>
+      <aside>
         <h3>Area correlati</h3>
         <article>
-            <h4><a href="#"> Validare il codice HTML</a></h4>
-            <p>Categoria:<a href="#">Develop</a></p>
-            <p>Data:18-9-2020</p>
+          <h4><a href="#"> Validare il codice HTML</a></h4>
+          <p>Categoria:<a href="#">Develop</a></p>
+          <p>Data:18-9-2020</p>
         </article>
         <article>
-            <h4><a href="#"> Corregere la sintassi</a></h4>
-            <p>Categoria:<a href="#">Develop</a></p>
-            <p>Data:16-9-2020</p>
+          <h4><a href="#"> Corregere la sintassi</a></h4>
+          <p>Categoria:<a href="#">Develop</a></p>
+          <p>Data:16-9-2020</p>
         </article>
         <article>
-            <h4><a href="#"> Meno Kb nella pagina</a></h4>
-            <p>Categoria:<a href="#">Ottimizzazione</a></p>
-            <p>Data:30-9-2020</p>
+          <h4><a href="#"> Meno Kb nella pagina</a></h4>
+          <p>Categoria:<a href="#">Ottimizzazione</a></p>
+          <p>Data:30-9-2020</p>
         </article>
+      </aside>
+    </main>
 
-    </aside>
-
-
-</main>
-
-<footer>
-    <p>Blog Epicode &copy;2023</p>
-    <p>Testata online di Mario Rossi, registrata con prot. n. 213&#47;2018 - Via Luigi Einaudi 2 - Milano. P.IVA. 00112233.</p>
-    <p><a href="mailto:info@epicode.school">info@epicode.school</a></p>
-</footer>
-
-</body>
+    <footer>
+      <p>Blog Epicode &copy;2023</p>
+      <p>
+        Testata online di Mario Rossi, registrata con prot. n. 213&#47;2018 -
+        Via Luigi Einaudi 2 - Milano. P.IVA. 00112233.
+      </p>
+      <p><a href="mailto:info@epicode.school">info@epicode.school</a></p>
+    </footer>
+  </body>
 </html>
